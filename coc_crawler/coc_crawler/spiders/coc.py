@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
+# Author: John Skandalakis.
+# Reference: http://mherman.org/blog/2012/11/08/recursively-scraping-web-pages-with-scrapy/
+#            http://bgrva.github.io/blog/2014/03/04/scrapy-after-tutorials-part-1/
+
 import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from coc_crawler.items import CocCrawlerItem
 from scrapy.exceptions import *
+
 class CocSpider(CrawlSpider):
     name = "coc"
     allowed_domains = ["www.cc.gatech.edu"]
