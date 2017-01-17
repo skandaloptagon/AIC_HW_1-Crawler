@@ -24,7 +24,7 @@ Speed Stats:
         2017-01-17 15:36:34 [scrapy.extensions.logstats] INFO: Crawled 256 pages (at 256 pages/min), scraped 250 items (at 250 items/min)
         2017-01-17 15:37:34 [scrapy.extensions.logstats] INFO: Crawled 482 pages (at 226 pages/min), scraped 469 items (at 219 items/min)
         2017-01-17 15:36:34 [scrapy.extensions.logstats] INFO: Crawled 256 pages (at 256 pages/min), scraped 250 items (at 250 items/min)
-        INFO: Crawled 1127 pages (at 354 pages/min), scraped 1110 items (at 349 items/min)
+        2017-01-17 15:38:34 [scrapy.extensions.logstats] INFO: Crawled 1127 pages (at 354 pages/min), scraped 1110 items (at 349 items/min)
         2017-01-17 15:40:34 [scrapy.extensions.logstats] INFO: Crawled 1518 pages (at 391 pages/min), scraped 1479 items (at 369 items/min)
         2017-01-17 15:41:34 [scrapy.extensions.logstats] INFO: Crawled 1736 pages (at 218 pages/min), scraped 1683 items (at 204 items/min)
         2017-01-17 15:42:34 [scrapy.extensions.logstats] INFO: Crawled 1957 pages (at 221 pages/min), scraped 1876 items (at 193 items/min)
@@ -98,3 +98,31 @@ Example output:
             "Ph.D. CS - Intelligent Systems Body of Knowledge | College of Computing"
           ]
         }
+        
+## Design
+
+Here I will discuss some of the caviats of my crawler as well as design decisions.
+
+### Pros and Cons
+Pros:
+
+- Easy to change and readable code
+- Easy to configure system resources
+- Piped for efficiency
+- Uses Python
+
+Cons:
+
+- Memory intensive
+- Command line only
+- If you haven't used it before, the documentation is hard to parse and online support is dated to older versions.
+
+### Design
+I decided to use Scrapy as my base crawler. Scrapy takes advantage of a threadpool, as well as a pipeline for items you create. Basically you create items by parsing each page, then you send those items to the pipeline where they are processed. Both Pipelines and Parsers are added to the threadpool and are handled based on the priority level in the settings. I used Scrapy because I like it's design and because it is familiar to me.
+
+## Lessons Learned
+There are different types of crawlers supported by scrapy and some fit certain purposes better than others. For recursive crawling a single domain, CrawlSpider was the best. For the nitty gritty homebrew crawler, the default is preferable.
+
+## References
+http://mherman.org/blog/2012/11/08/recursively-scraping-web-pages-with-scrapy/
+http://bgrva.github.io/blog/2014/03/04/scrapy-after-tutorials-part-1/
