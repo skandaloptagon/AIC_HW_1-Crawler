@@ -3,7 +3,7 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from coc_crawler.items import CocCrawlerItem
-
+from scrapy.exceptions import *
 class CocSpider(CrawlSpider):
     name = "coc"
     allowed_domains = ["www.cc.gatech.edu"]
@@ -22,5 +22,8 @@ class CocSpider(CrawlSpider):
         item["current_url"] = response.url
         referring_url = response.request.headers.get('Referer', None)
         item["referring_url"] = referring_url
-        item["title"] = response.xpath('//title/text()').extract()
+        try:
+            item["title"] = response.xpath('//title/text()').extract()
+        except NotSupported:
+            item["title"] = None
         return item
