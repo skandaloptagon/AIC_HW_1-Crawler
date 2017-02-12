@@ -7,12 +7,25 @@
 
 import scrapy
 
-class CocCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    session_id = scrapy.Field()
-    depth = scrapy.Field()
+class CigarsReviewItem(scrapy.Item):
     current_url = scrapy.Field()
-    referring_url = scrapy.Field()
     title = scrapy.Field()
+    origin = scrapy.Field()
+    manufactured = scrapy.Field()
+    gauge = scrapy.Field()
+    length = scrapy.Field()
+    cigar_format = scrapy.Field()
+    ring = scrapy.Field()
+    weight = scrapy.Field()
+    score = scrapy.Field()
+    presentation = scrapy.Field()
+    average_user_rating = scrapy.Field()
+    pass
+
+class CigarReviewItem2(scrapy.Item):
+    average_user_rating = scrapy.Field()
+    pass
+
+class CigarAffItem(scrapy.Item):
+    session_id = scrapy.Field()
     pass

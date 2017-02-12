@@ -14,7 +14,7 @@ import time
 import Queue
 
 class CocSpider(scrapy.Spider):
-    name = "coc"
+    name = "crr"
     allowed_domains = ["www.cigars-review.org"]
     start_urls = ['http://www.cigars-review.org/']
 

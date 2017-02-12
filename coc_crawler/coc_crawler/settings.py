@@ -14,14 +14,19 @@ BOT_NAME = 'coc_crawler'
 SPIDER_MODULES = ['coc_crawler.spiders']
 NEWSPIDER_MODULE = 'coc_crawler.spiders'
 
-DEPTH_LIMIT=4
+#DEPTH_LIMIT=4
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'coc_crawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 LOG_LEVEL="INFO"
+
+
+CONCURRENT_ITEMS=32
+CONCURRENT_REQUESTS_PER_DOMAIN = 32
+
 
 ITEM_PIPELINES = {
     'coc_crawler.pipelines.CocCrawlerPipeline':500
@@ -39,7 +44,7 @@ ITEM_PIPELINES = {
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
