@@ -22,8 +22,13 @@ class CigarsReviewItem(scrapy.Item):
     average_user_rating = scrapy.Field()
     pass
 
-class CigarReviewItem2(scrapy.Item):
-    average_user_rating = scrapy.Field()
+class CigarUserReviewItem(scrapy.Item):
+    title = scrapy.Field()
+    review_no = scrapy.Field()
+    user_rating = scrapy.Field()
+    review_text = scrapy.Field()
+    review_date = scrapy.Field()
+    reviewer_name = scrapy.Field()
     pass
 
 class CigarAffItem(scrapy.Item):

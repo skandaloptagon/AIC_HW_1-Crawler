@@ -1,0 +1,75 @@
+missing module named org - imported by copy
+missing module named _sha512 - imported by hashlib
+missing module named _sha256 - imported by hashlib
+missing module named _md5 - imported by hashlib
+missing module named _sha - imported by hashlib
+missing module named _winreg - imported by mimetypes, urllib, platform, appdirs
+missing module named OverrideFrom23 - imported by Carbon.Res
+missing module named msvcrt - imported by subprocess, getpass
+missing module named SOCKS - imported by ftplib
+missing module named rourl2path - imported by urllib
+missing module named 'org.python' - imported by pickle, xml.sax
+missing module named _xmlplus - imported by xml
+missing module named java - imported by xml.sax._exceptions
+missing module named _dummy_threading - imported by dummy_threading
+missing module named _subprocess - imported by subprocess
+missing module named riscosenviron - imported by os
+missing module named riscospath - imported by os
+missing module named riscos - imported by os
+missing module named ce - imported by os
+missing module named _emx_link - imported by os
+missing module named os2 - imported by os
+missing module named nt - imported by os, ntpath
+missing module named http - imported by twisted.python.compat
+missing module named html - imported by twisted.python.compat
+missing module named 'urllib.parse' - imported by twisted.python.compat, w3lib.url, lxml.html, twisted.web.http
+missing module named vms_lib - imported by platform
+missing module named 'java.lang' - imported by platform
+missing module named winreg - imported by platform
+missing module named win32pipe - imported by platform, twisted.internet._dumbwin32proc, twisted.internet._pollingfile
+missing module named asyncio - imported by twisted.internet.defer
+missing module named netbios - imported by uuid
+missing module named win32wnet - imported by uuid
+missing module named pywintypes - imported by twisted.python.lockfile, twisted.internet._dumbwin32proc, twisted.internet._pollingfile
+missing module named win32api - imported by twisted.python.win32, twisted.python.lockfile, appdirs, twisted.internet._dumbwin32proc, twisted.internet._pollingfile
+missing module named queue - imported by twisted.internet.threads, twisted._threads._pool
+missing module named win32gui - imported by twisted.internet.win32eventreactor
+missing module named win32event - imported by twisted.internet._dumbwin32proc, twisted.internet.win32eventreactor
+missing module named win32file - imported by twisted.internet._dumbwin32proc, twisted.internet._pollingfile, twisted.internet.win32eventreactor
+missing module named win32security - imported by twisted.internet._dumbwin32proc
+missing module named win32con - imported by twisted.python.win32, twisted.internet._dumbwin32proc
+missing module named win32process - imported by twisted.internet.posixbase, twisted.internet._dumbwin32proc
+missing module named sgi - imported by pty
+missing module named 'com.sun' - imported by appdirs
+missing module named com - imported by appdirs
+missing module named win32com.shell - imported by appdirs
+missing module named ordereddict - imported by pyparsing
+missing module named _thread - imported by pyparsing
+missing module named 'importlib.machinery' - imported by pkg_resources
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib'
+missing module named six.moves.map - imported by six.moves, pkg_resources
+missing module named six.moves.filter - imported by six.moves, pkg_resources
+runtime module named six.moves - imported by scrapy._monkeypatches, pkg_resources, 'six.moves.urllib', cryptography.x509.general_name, cryptography.hazmat.backends.openssl.decode_asn1, scrapy.http.request.rpc, ConfigParser
+missing module named _xmlrpclib - imported by xmlrpclib
+missing module named 'six.moves.urllib_parse' - imported by 'six.moves.urllib_parse'
+missing module named _imp - imported by pkg_resources
+missing module named pyimod03_importers - imported by /Users/ivanduralde/AIC_HW_1-Crawler/venv/lib/python2.7/site-packages/PyInstaller/loader/rthooks/pyi_rth_pkgres.py
+missing module named win32evtlog - imported by logging.handlers
+missing module named win32evtlogutil - imported by logging.handlers
+missing module named "'six.moves.urllib'.request" - imported by w3lib.url
+missing module named "'six.moves.urllib'.parse" - imported by w3lib.url, scrapy.utils.url, scrapy.http.request.form, scrapy.http.response, scrapy.http.response.text, scrapy.utils.sitemap, scrapy.linkextractors, scrapy.linkextractors.lxmlhtml, scrapy.utils.request, scrapy.utils.httpobj
+missing module named 'urllib.request' - imported by lxml.html
+missing module named 'collections.abc' - imported by lxml.html
+missing module named 'h2.exceptions' - imported by twisted.web._http2
+missing module named 'h2.events' - imported by twisted.web._http2
+missing module named 'h2.errors' - imported by twisted.web._http2
+missing module named h2 - imported by twisted.web._http2
+missing module named priority - imported by twisted.web._http2
+missing module named iconv_codec - imported by bs4.dammit
+missing module named chardet - imported by bs4.dammit
+missing module named cchardet - imported by bs4.dammit
+missing module named 'html5lib.treebuilders' - imported by bs4.builder._html5lib
+missing module named 'html5lib.constants' - imported by bs4.builder._html5lib
+missing module named html5lib - imported by bs4.builder._html5lib
+missing module named 'html.parser' - imported by bs4.builder._htmlparser
+missing module named copyreg - imported by twisted.persisted.styles
